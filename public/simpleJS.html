@@ -4,3 +4,29 @@
   myValue = document.getElementById('myText').value;
   document.getElementById('myDiv').innerHTML = myValue; 
   }">
+
+
+<script>
+function myMain(){   // a funtion definition
+   let myTemp = ''  // an empty variable
+   let myValue = parseInt(document.getElementById('myText').value);  // input to a variable
+   for (myLoop =0; myLoop < myValue; myLoop++){   // Loop
+      if (myLoop > 4) {   // Decision
+         myTemp += myLoop + '<br>'
+      }   
+   }
+   document.getElementById('myDiv').innerHTML = myTemp;  // Output to a webpage element         
+}
+</script>
+
+
+<input type="text" value="7" id="myText"> 
+
+<div id="myDiv">...</div>  
+
+<input type="button" value="in-out" onclick="{  // event definition
+    myMain()  // function activation
+}"><br>
+
+
+The only thing missing from this code is Objects, Arrays and Classes!
